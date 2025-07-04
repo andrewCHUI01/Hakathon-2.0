@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VibeBot - Homework Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>VibeBot 🤖</h1>
+      <p class="subtitle">Your fun, smart homework helper for kids!</p>
+      <button id="toggle-theme" aria-label="Toggle dark/light mode">🌙 Dark Mode</button>
+      <p id="subscription-status" class="subscription">Free Mode (Limited) - Ask away!</p>
+    </header>
+
+    <main id="chat"></main>
+
+    <div id="loading" class="hidden">VibeBot is thinking... 🤔</div>
+
+    <form id="input-form">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your homework question..."
+        autocomplete="off"
+        aria-label="Enter your homework question"
+      >
+      <button type="submit" id="send-btn" aria-label="Send question">Send</button>
+      <label for="image-upload" class="image-upload-label" title="Upload a homework image">
+        📷 Upload Image
+      </label>
+      <input type="file" id="image-upload" accept="image/*" hidden>
+    </form>
+
+    <footer>
+      <p>© 2025 VibeBot. Built with 💛 for Kenyan kids!</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4/dist/tesseract.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
